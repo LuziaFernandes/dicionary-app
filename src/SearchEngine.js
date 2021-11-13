@@ -7,9 +7,10 @@ import axios from "axios";
 export default function SearchEngine () {
 
 let [keyword, setKeyword] = useState("");
+let [results, setResults] = useState (null);
 
 function handleResponse (response) {
-console.log(response.data[0].meanings[0].definitions[0].definition);
+setResults(response.data[0]);
 }
 
 function search(event){
@@ -31,7 +32,7 @@ function handleKeywordChange(event) {
 
 <form onSubmit={search}><input type="search" placeholder="Search a word ..." autoFocus={true} onChange={handleKeywordChange}/></form>
 
-<Results />
+<Results results={results}/>
 </div>
        );
 }
