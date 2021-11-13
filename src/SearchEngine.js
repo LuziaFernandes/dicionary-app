@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './SearchEngine.css';
+import Results from "./Results";
 import axios from "axios";
 
 
@@ -8,7 +9,7 @@ export default function SearchEngine () {
 let [keyword, setKeyword] = useState("");
 
 function handleResponse (response) {
-console.log(response.data[0]);
+console.log(response.data[0].meanings[0].definitions[0].definition);
 }
 
 function search(event){
@@ -30,6 +31,7 @@ function handleKeywordChange(event) {
 
 <form onSubmit={search}><input type="search" placeholder="Search a word ..." autoFocus={true} onChange={handleKeywordChange}/></form>
 
+<Results />
 </div>
        );
 }
