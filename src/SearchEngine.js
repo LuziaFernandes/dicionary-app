@@ -31,8 +31,8 @@ function handleKeywordChange(event) {
 <div className="input-title"><strong>What word do you want to look up?</strong></div>
 
 <form onSubmit={search}>
-    <input type="search" placeholder="Search a word ..." autoFocus={true} onChange={handleKeywordChange} className="col-4 search-bar"/>
-    <input type="submit" className="btn btn-primary"/>
+    <input type="search" placeholder="Search a word ..." autoFocus={true} onChange={handleKeywordChange} className="col search-bar"/>
+    <input type="submit" className="btn btn-info btn-lg" value="Search"/>
 </form>
 
 <Results results={results}/>
