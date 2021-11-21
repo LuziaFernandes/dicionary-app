@@ -1,14 +1,18 @@
 
 h1{
-  font-size: 50px;
+  font-size: 45px;
   color: #885df1;
-  margin-bottom: 50px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .App {
   padding: 50px;
+  max-width: 100%;
   
+}
+.Header {
+    margin-bottom: 100px;
 }
 
 .logo {margin: 25px;}
@@ -19,5 +23,6 @@ h1{
   color: black;
   opacity: 0.6;
   font-weight: bold;
+  margin-top: 50px;
 }
 

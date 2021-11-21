@@ -13,7 +13,7 @@ export default function Meanings (props){
                 return(
                     <div key={index}> 
             
-            <div className="definition"> <strong> Definition: </strong> <span className="text-capitalize">{definition.definition}</span></div>
+            <div className="definition-block"> <strong> Definition: </strong> <span className="text-capitalize">{definition.definition}</span></div>
 
 
             <div className="example-block"> <strong> Example: </strong><span className="text-capitalize example"> <em>"{definition.example}"</em></span></div>
