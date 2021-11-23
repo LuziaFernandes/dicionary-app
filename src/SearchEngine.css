@@ -18,6 +18,7 @@
 }
 
 @media (max-width: 767px) { 
+    .SearchEngine {padding-bottom: 0px;}
     .input-title {font-size: 20px;}
     .search-bar {
         padding: 3px;

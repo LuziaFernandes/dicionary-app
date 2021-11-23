@@ -13,12 +13,12 @@ export default function Results (props) {
            <h2 className="text-capitalize">{props.results.word}</h2>
 
         <div className="row phonetics-display justify-content-center">
-          <div className="col-2">
+          <div className="col-sm-2">
            {props.results.phonetics.map(function (phonetic, index){
      return (<div key={index}><Phonetics phonetics={phonetic} /></div>); })}
            </div>
        
-                 <div className="col-2">
+                 <div className="col-sm-2">
                  <ReactAudioPlayer src={props.results.phonetics[0].audio} controls/>
                  </div>
                  </div>
