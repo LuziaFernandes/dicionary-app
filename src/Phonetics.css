@@ -5,3 +5,9 @@
     display: inline;
     font-size: 40px;
 }
+
+
+
+@media (max-width: 767px) { 
+    .phonetics-text {font-size: 20px;}
+   }
